@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Error 153 Fixer",
+    "version": "0.1",
+    "description": "Fix the YouTube embedded player configuration error (153) that you may have encountered on other sites",
+    "icons": {
+        "48": "icon.svg"
+    },
+    "permissions": ["scripting"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "youtube153fixer@carcinizer",
+            "strict_min_version": "102.0",
+            "data_collection_permissions": {
+                "required": ["none"]
+            }
+        }
+    }
+}
